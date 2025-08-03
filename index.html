@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CEP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>MEGA CEP</h1>
+  </header>
+
+  <main>
+    <h2>CADASTRE SEU ENDEREÇO</h2>
+    
+    <form class="formulario">
+      <label for="cep">CEP:</label>
+      <input type="number" id="cep" name="cep" required>
+
+      <label for="rua">RUA:</label>
+      <input type="text" id="rua" name="rua" required>
+
+      <label for="numero">NÚMERO:</label>
+      <input type="number" id="numero" name="numero" required>
+
+      <label for="bairro">BAIRRO:</label>
+      <input type="text" id="bairro" name="bairro" required>
+
+      <label for="cidade">CIDADE:</label>
+      <input type="text" id="cidade" name="cidade" required>
+
+      <label for="estado">ESTADO:</label>
+      <input type="text" id="estado" name="estado" required>
+
+      <button type="submit">CADASTRAR</button>
+    </form>
+
+    <button type="button" onclick="localStorage.clear(); location.reload();">Limpar Dados</button>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
